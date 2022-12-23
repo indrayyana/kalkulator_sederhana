@@ -51,6 +51,7 @@ input[type="submit"] {
 
 #hasil {
   font-size: 100px;
+  margin: auto;
   color: red;
   font-weight: bold;
   max-width: fit-content;
