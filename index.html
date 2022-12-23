@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Kalkulator</title>
+  </head>
+  <body>
+    <h1 style="font-size: 50px; text-align: center">KALKULATOR</h1>
+
+    <div class="container">
+      <div class="konten">
+        <div class="kiri">
+          <label for="bil_1">Bilangan pertama</label><br />
+          <input type="number" name="bil_1" id="bil_1" /><br />
+          <label for="bil_2">Bilangan kedua</label><br />
+          <input type="number" name="bil_2" id="bil_2" /><br />
+          <label for="operator">Operator</label><br />
+          <select name="operator" id="operator">
+            <option value="+">Jumlahkan (+)</option>
+            <option value="-">Kurangkan (-)</option>
+            <option value="*">Kalikan (x)</option>
+            <option value="/">Bagikan (:)</option></select
+          ><br /><br />
+          <input
+            type="submit"
+            value="Hasil"
+            onclick="kalkulator(document.getElementById('bil_1').value, document.getElementById('bil_2').value, document.getElementById('operator').value)"
+          /><br />
+        </div>
+
+        <div class="kanan">
+          <label for="hasil">Hasil : </label>
+          <p id="hasil"></p>
+          <br />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
